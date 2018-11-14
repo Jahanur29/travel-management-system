@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13AEF7C6-A881-4052-8590-D2F17C58C7AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>travel</RootNamespace>
+    <AssemblyName>travel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>098938B56B987B25262CEFC204A213569AC6C37D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>travel_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="busd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="busd.Designer.cs">
+      <DependentUpon>busd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="busmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="busmain.Designer.cs">
+      <DependentUpon>busmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="airlines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="airlines.Designer.cs">
+      <DependentUpon>airlines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contact.Designer.cs">
+      <DependentUpon>contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fligthdtl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fligthdtl.Designer.cs">
+      <DependentUpon>fligthdtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Menu.Designer.cs">
+      <DependentUpon>Main Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="planemain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="planemain.Designer.cs">
+      <DependentUpon>planemain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservationdb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservationdb.Designer.cs">
+      <DependentUpon>reservationdb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ship.Designer.cs">
+      <DependentUpon>ship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shipbooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shipbooking.Designer.cs">
+      <DependentUpon>shipbooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shipdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shipdetails.Designer.cs">
+      <DependentUpon>shipdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shipview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shipview.Designer.cs">
+      <DependentUpon>shipview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Traindetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Traindetails.Designer.cs">
+      <DependentUpon>Traindetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainmain.Designer.cs">
+      <DependentUpon>Trainmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainstation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trainstation.Designer.cs">
+      <DependentUpon>trainstation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trainview.Designer.cs">
+      <DependentUpon>trainview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update pass.Designer.cs">
+      <DependentUpon>Update pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busr.Designer.cs">
+      <DependentUpon>Busr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plane.Designer.cs">
+      <DependentUpon>Plane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Train.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Train.Designer.cs">
+      <DependentUpon>Train.cs</DependentUpon>
+    </Compile>
+    <Compile Include="planeview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="planeview.Designer.cs">
+      <DependentUpon>planeview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="travelDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view.Designer.cs">
+      <DependentUpon>view.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="busd.resx">
+      <DependentUpon>busd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="busmain.resx">
+      <DependentUpon>busmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="airlines.resx">
+      <DependentUpon>airlines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contact.resx">
+      <DependentUpon>contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fligthdtl.resx">
+      <DependentUpon>fligthdtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Menu.resx">
+      <DependentUpon>Main Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="planemain.resx">
+      <DependentUpon>planemain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservationdb.resx">
+      <DependentUpon>reservationdb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ship.resx">
+      <DependentUpon>ship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipbooking.resx">
+      <DependentUpon>shipbooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipdetails.resx">
+      <DependentUpon>shipdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipview.resx">
+      <DependentUpon>shipview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Traindetails.resx">
+      <DependentUpon>Traindetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainmain.resx">
+      <DependentUpon>Trainmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainstation.resx">
+      <DependentUpon>trainstation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainview.resx">
+      <DependentUpon>trainview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update pass.resx">
+      <DependentUpon>Update pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busr.resx">
+      <DependentUpon>Busr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plane.resx">
+      <DependentUpon>Plane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Train.resx">
+      <DependentUpon>Train.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="planeview.resx">
+      <DependentUpon>planeview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="view.resx">
+      <DependentUpon>view.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="travelDataSet.xsc">
+      <DependentUpon>travelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet.xss">
+      <DependentUpon>travelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet1.xsc">
+      <DependentUpon>travelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet1.xss">
+      <DependentUpon>travelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="travel_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0004764.jpg" />
+    <Content Include="travel.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="travel_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>travel.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
